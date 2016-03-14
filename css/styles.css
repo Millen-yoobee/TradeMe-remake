@@ -52,3 +52,52 @@ body {
 #sister-sites li:hover:not(#active-site) a small {
 	color: #ff4700;
 }
+
+main {
+/*	background-color: pink;*/
+	width: 960px;
+	margin: 0 auto;
+	/*  o for top, bottom and auto left, right ==> to center container  */
+}
+
+.product {
+	background-color: #dddddd;
+	width: 19%;
+	height: 200px;
+	margin-bottom: 50px;
+	float: left;
+	margin-right: 11px;
+	position: relative;
+	border: 1px solid #999999;
+	box-sizing: border-box;
+}
+.product h2{
+	font-size: 16px; /*  16px typical size of desktop text   */
+	font-weight: normal;
+	margin-top: 0;
+/*	Following 3 attributes for the ellipsis   */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.product img {
+	max-width: 100%;
+}
+.product:last-child {
+	margin-right: 0;
+}
+.product div {
+	padding:;
+}
+.product p {
+	font-weight: bold;
+	text-align: right;
+}
+.discount {
+	background-color: #e34647;
+	padding: 4px 10px;   /* 4px top & bottom, 10px left & right  */
+	color: white;
+	position: absolute;
+	top: 5px; 
+	left: -5px;
+}
