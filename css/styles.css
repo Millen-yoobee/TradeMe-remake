@@ -1,9 +1,54 @@
 body {
 
-	background-color: #ff0000; /*New company color*/
+	margin: 0;
+}
+#sister-sites small {
+	display: block;
+	color: #777777;
 
-	/*This is a comment line in a css file.*/
-
-
-
+}
+#sister-sites li {
+	display: inline-block;
+	padding: 4px 5px 0 5px;
+	border: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	word-spacing: normal;
+}
+#sister-sites ul {
+	padding-left: 0;
+	margin: 0 auto;
+/*	background-color: red;   */
+	width: 960px;
+}
+#sister-sites a {
+	text-decoration: none;
+	color: #0297d2;
+}
+#sister-sites {
+	background-color: #eeeeee;
+	padding-top: 5px;
+	border-bottom: 1px solid #aaaaaa;
+	word-spacing: -4px;  /*This sets word-spacing= 0px; current word-s	pacing is 4px*/
+}
+#active-site a {
+	color: #777777;
+}
+#active-site {
+	background-color: #ffffff;
+	padding: 4px 5px 0 5px;
+	border-left: 1px solid #aaaaaa;
+	border-right: 1px solid #aaaaaa;
+	border-top: 1px solid #aaaaaa;
+	position: relative;
+	top: 2px;
+}
+#sister-sites li:hover:not(#active-site) {
+	background-color: white;
+	border: 1px solid #bde2f1;
+	border-bottom: none;
+}
+#sister-sites li:hover:not(#active-site) a,
+#sister-sites li:hover:not(#active-site) a small {
+	color: #ff4700;
 }
