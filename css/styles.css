@@ -154,8 +154,9 @@ body > footer ul {
 	padding-left: 0;
 	list-style: none;
 }
-#links a,
-#functions a {
+#footer-container a {     /*   This line replaces the 2 lines below     */
+	/*   #links a,                
+	#functions a {  */
 	color: #aaaaaa;
 	text-decoration: none;
 	line-height: 28px;
