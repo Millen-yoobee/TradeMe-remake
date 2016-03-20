@@ -221,10 +221,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', end
 	background-color: #efefef;
 	padding: 20px;
 }
-#categories {
+#categories {     /*  a container   */
 	background-color: white;
 	width: 66.66%;
 }
+
+/*Clearfix for the categories container  */
+#categories:after {
+	content: '';
+	display: block;
+/*	background-color: pink;
+	height: 10px;  */
+	clear: both;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;    /* to move the categories inside to the center   */
@@ -258,17 +268,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383838', end
 	color: white;
 	text-decoration: none;
 }
-/*#categories ul:(#main-categories){     
 
-}*/
+/*  all unordered lists w/in categories except main-categories   */
+#categories ul:(#main-categories){    /*  same as #main-categories ~ ul   */
+                                 /*    nothing to do; just to demo the format   */
+}
 
-#main-categories ~ ul {     /*  all unordered list except the main-categories ul   */
+#main-categories ~ ul {     /*  all unordered list w/in categories except main-categories */
 	list-style: none;
 	padding-left: 20px;     /*  instead of the default of 40px   */
-	background-color:  orange;
+/*	background-color:  orange;  */
 	width: 33.33%;
 	float: left;    /*  this attr shortens the container search    */
  	box-sizing: border-box;  /* so that the width of the container is not affected by padding */
+ 	margin-top: 0;
 }
 main {
 	clear: both;
@@ -277,4 +290,8 @@ main {
 	content: '';
 	display: block;
 	clear: both;
+}
+#categories ul:last-child {
+/*	background-color: red;  */
+	padding-right: 20px;
 }
